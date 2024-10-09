@@ -33,4 +33,24 @@ public class Main {
 
 
     }
+    public static void addAnimals(){
+
+    }
+    public static void displayAnimals(){
+        int subMenuCommand;
+        do{
+            System.out.println("Please enter an option: ");
+            System.out.println("1) Display All");
+            System.out.println("2) Display publicly available");
+            System.out.println("3) Search by name");
+            System.out.println("4) Search by type");
+            System.out.println("5) Search by age range");
+            System.out.println("6) Search by origin");
+            subMenuCommand = scanner.nextInt();
+
+
+        }while(subMenuCommand != 0);
+
+    }
+
 }
