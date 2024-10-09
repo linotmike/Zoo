@@ -1,5 +1,6 @@
 package com.ps;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -14,7 +15,13 @@ public class Main {
             System.out.println("1) Add animal");
             System.out.println("2) Display animal");
             System.out.println("0) Exit");
+            try{
             mainMenuCommand = scanner.nextInt();
+
+            }catch(InputMismatchException ime){
+                mainMenuCommand = 0;
+
+            }
             switch (mainMenuCommand) {
                 case 1:
 //                    addAnimal();
