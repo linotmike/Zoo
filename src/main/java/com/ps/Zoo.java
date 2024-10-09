@@ -7,4 +7,14 @@ public class Zoo {
     private String origin;
     private boolean isPublic;
 
+
+    //constructors
+
+    public Zoo(String name, String type, int age, String origin, boolean isPublic){
+        this.name = name;
+        this.type= type;
+        this.age = age;
+        this.origin = origin;
+        this.isPublic = isPublic;
+    }
 }
